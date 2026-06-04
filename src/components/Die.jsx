@@ -5,7 +5,8 @@ export default function Die(props) {
 			style={{
 				backgroundColor: props.obj.isHeld ? "#59E391" : "#FFFFFF",
 				boxShadow: "0 10px 25px rgba(0, 0, 0, 0.2)",
-			}}>
+			}}
+			onClick={props.handleHold}>
 			{props.obj.value}
 		</button>
 	);
